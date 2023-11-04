@@ -291,13 +291,15 @@
             'img/gulp.png',
             'img/HUH.png',
             'img/karissa.png',
-            'img/karissa2.png',
             'img/lay.png',
             'img/logan.jpg',
             'img/lol.jpg',
             'img/lol.png',
+            'img/popeyes.png',
             'img/shotgun.jpg',
             'img/smile.jpg',
+            'img/sponge.png',
+            'img/walter.png',
             'img/WHAT.jpg'
         ]
 

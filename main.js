@@ -436,7 +436,6 @@
     }
 
     function checkForWin () {
-        console.log("MINEFIELD: ", mineField)
         for (const key in mineField) {
             const row = mineField[key]
 

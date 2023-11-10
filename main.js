@@ -269,7 +269,9 @@
 
             document.body.appendChild(img)
 
-            new Audio('sound/boom.wav').play()
+            const randomSound = getRandomSound()
+
+            new Audio(randomSound).play()
 
             await new Promise(r => setTimeout(r, 2000))
         }
@@ -310,12 +312,40 @@
 
     function getRandomSound () {
         const sounds = [
-            'sound/boom.wav'
+            '21',
+            'alarm',
+            'alert',
+            'amongus',
+            'augh',
+            'babylaugh',
+            'bell',
+            'bong',
+            'bonk',
+            'boom',
+            'bruh',
+            'buzzer',
+            'cave',
+            'error',
+            'fart',
+            'gaster',
+            'hehehehaw',
+            'metalpipe',
+            'nope',
+            'oof',
+            'pianoriff',
+            'recordscratch',
+            'samsung',
+            'smm_scream',
+            'steve_oof',
+            'suspense',
+            'terraria_pot',
+            'waterphone',
+            'yoda'
         ]
 
         const index = Math.floor(Math.random() * sounds.length)
 
-        return sounds[index]
+        return 'sound/' + sounds[index] + '.wav'
     }
 
     function getTiles (tile) {

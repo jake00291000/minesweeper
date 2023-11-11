@@ -482,43 +482,11 @@
 
         endTimer()
 
-        const img = document.createElement('img')
+        const youWon = document.getElementById('you-won')
 
-        img.setAttribute('src', 'img/snoop.gif')
+        youWon.style.visibility = 'visible'
 
-        img.classList.add('snoop')
-
-        document.body.appendChild(img)
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        await new Promise(r => setTimeout(r, 200))
-
-        new Audio('sound/airhorn.wav').play()
-
-        setTimeout(() => {
-            deleteImagery()
-        }, 3000)
+        new Audio('sound/tada.wav').play()
     }
 
     function deleteImagery () {
@@ -563,6 +531,10 @@
         const difficultyLevel = Number(event.target.value)
 
         difficulty = difficulties[difficultyLevel]
+
+        const youWon = document.getElementById('you-won')
+
+        youWon.style.visibility = 'hidden'
 
         drawBoard()
     }

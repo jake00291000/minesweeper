@@ -126,3 +126,8 @@ body {
     animation: grow2 3s forwards;
     pointer-events: none;
 }
+
+#you-won {
+    visibility: hidden;
+    color: green;
+}
